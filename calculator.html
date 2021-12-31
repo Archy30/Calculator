@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+    <div class="outer">
+        <div class="inner">
+            <div class="ansbox"><p id="ans">Ans</p></div>
+                <div class="cal">
+                    <div class="box">
+                        <button style="color:red" onclick="clearr()" id="clear"><b>C</b></button>
+                        <button onclick="evaluat(0)" class="btn" value=(>(</button>
+                        <button onclick="evaluat(1)" class="btn" value=)>)</button>
+                        <button onclick="backspace()"><i class="material-icons" style="font-size:19px" >backspace</i></button>
+                    </div>
+                    <div class="box">
+                        <button onclick="evaluat(2)" class="btn" value=**>^</button>
+                        <button onclick="evaluat(3)" class="btn" value=3.14>&Pi;</button>
+                        <button onclick="evaluat(4)" class="btn" value='1/'>1/x</button>
+                        <button onclick="evaluat(5)" class="btn" value="/">/</button>
+                    </div>
+                    <div class="box">
+                        <button onclick="evaluat(6)" class="btn" value=1>1</button>
+                        <button onclick="evaluat(7)" class="btn" value=2>2</button>
+                        <button onclick="evaluat(8)" class="btn" value=3>3</button>
+                        <button onclick="evaluat(9)" class="btn" value=*>*</button>
+                    </div>
+                    <div class="box">
+                        <button onclick="evaluat(10)" class="btn" value=4>4</button>
+                        <button onclick="evaluat(11)" class="btn" value=5>5</button>
+                        <button onclick="evaluat(12)" class="btn" value=6>6</button>
+                        <button onclick="evaluat(13)" class="btn" value=->-</button>
+                    </div>
+                    <div class="box">
+                        <button onclick="evaluat(14)" class="btn" value=7>7</button>
+                        <button onclick="evaluat(15)" class="btn" value=8>8</button>
+                        <button onclick="evaluat(16)" class="btn" value=9>9</button>
+                        <button onclick="evaluat(17)" class="btn" value=+>+</button>
+                    </div>
+                    <div class="box">
+                        <button onclick="evaluat(18)" class="btn" value=%>%</button>
+                        <button onclick="evaluat(19)" class="btn" value=0>0</button>
+                        <button onclick="evaluat(20)" class="btn" value=.>.</button>
+                        <button onclick="equalto()">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="myscripts.js"></script>
+
+</body>
+</html>
